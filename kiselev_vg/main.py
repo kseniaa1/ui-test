@@ -137,6 +137,14 @@ class Calc(QMainWindow):
         self.setFixedSize(400, 320)
         self.show()
 
+    def closeEvent(self, event):
+        reply = QMessageBox.question(self, 'Уверены?', 'ви таки хотите выйти?',QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
+
+        if reply == QMessageBox.StandardButton.Yes:
+            event.accept()
+        else:
+            event.ignore()
+
     def Num(self):
         self.line_input.setText(self.line_input.text() + self.sender().text())
 
