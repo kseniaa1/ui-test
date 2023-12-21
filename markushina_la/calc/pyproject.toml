@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "calc"
+version = "0.1.0"
+description = ""
+authors = ["Lyubov Markushina"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+PyQt6 = "^6.5.2"
+
+[tool.poetry.scripts]
+calc = "calc.entry:help_gui"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
