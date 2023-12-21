@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalculatorMainWindow</class>
+ <widget class="QMainWindow" name="CalculatorMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="inputLineEdit"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="outputLabel">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="sinButton" >
+          <property name="text">
+           <string>Sin</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: blue; color: white;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="clearButton" >
+          <property name="text">
+           <string>Стереть</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: blue; color: white;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="plusButton" >
+          <property name="text">
+           <string>+</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: blue; color: white;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="calculateButton" >
+          <property name="text">
+           <string>Вычислить</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: blue; color: white;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
