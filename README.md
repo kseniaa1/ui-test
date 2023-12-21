@@ -24,3 +24,17 @@
 
 ## 20231221
 Нужно написать специфический (см. персональный макет) калькулятор.
+
+kostitsyina_ad [mockups/6.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/6.drawio.svg)  
+gordeev_an [mockups/13.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/13.drawio.svg)  
+ishmanov_tf [mockups/4.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/4.drawio.svg)  
+goryagin_da [mockups/2.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/2.drawio.svg)  
+sharifullin_af [mockups/10.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/10.drawio.svg)  
+ragrin_dr [mockups/8.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/8.drawio.svg)  
+shanturov_mv [mockups/11.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/11.drawio.svg)  
+kiselev_vg [mockups/7.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/7.drawio.svg)  
+buj_at [mockups/3.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/3.drawio.svg)  
+zvyagina_mo [mockups/12.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/12.drawio.svg)  
+polyakova_kp [mockups/1.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/1.drawio.svg)  
+markushina_la [mockups/9.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/9.drawio.svg)  
+vekovshinin_va [mockups/5.drawio.svg](https://github.com/alexanderustinov/ui-test/tree/main/mockups/5.drawio.svg)  
