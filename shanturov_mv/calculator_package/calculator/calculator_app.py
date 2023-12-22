@@ -3,8 +3,8 @@ import tkinter as tk
 import argparse
 from tkinter import messagebox
 
-from custom_button import CustomButton
-from entry_with_placeholder import EntryWithPlaceholder
+from calculator.custom_button import CustomButton
+from calculator.entry_with_placeholder import EntryWithPlaceholder
 
 
 class CalculatorApp(tk.Tk):
