@@ -21,5 +21,5 @@ pip install -e path_to_calculator_package_directory
 После установки вы можете выполнить ваш пакет в командной строке:
 
 ```
-python -m calculator_package.calculator.calculator_app
+python -m calculator.calculator_app
 ```
