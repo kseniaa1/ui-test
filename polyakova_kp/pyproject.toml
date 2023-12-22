@@ -3,10 +3,6 @@ name = "ui_test"
 version = "0.0.1"
 build-backend = "setuptools.build_meta"
 
-dependencies = [
-    "PyQt5"
-]
-
 [tool.poetry]
 name = "ui_test"
 version = "1.0.0"
@@ -14,7 +10,7 @@ description = "The best calculator ever"
 authors = ["Ksenia Poliakova"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-pyqt5 = "*"
-
+python = "^3.11"
+pyqt5-qt5 = "<5.15.10"
+pyqt5 = "^5.15.10"
 
