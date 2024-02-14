@@ -26,17 +26,17 @@
 + Выход из программы должен быть реализован через диалоговое окно с подтверждением
 + Язык интерфейса - русский
 
-buj_at https://corgis-edu.github.io/corgis/json/smoking/
-gordeev_an https://corgis-edu.github.io/corgis/json/video_games/
-goryagin_da https://corgis-edu.github.io/corgis/json/coffee/
-ishmanov_tf https://corgis-edu.github.io/corgis/json/covid/
-kiselev_vg https://corgis-edu.github.io/corgis/json/tate/
-kostitsyina_ad https://corgis-edu.github.io/corgis/json/nuclear_explosions/
-markushina_la https://corgis-edu.github.io/corgis/json/earthquakes/
-polyakova_kp https://corgis-edu.github.io/corgis/json/classics/
-sharifullin_af https://corgis-edu.github.io/corgis/json/cars/
-vekovshinin_va https://corgis-edu.github.io/corgis/json/food/
-zvyagina_mo https://corgis-edu.github.io/corgis/json/county_demographics/
+buj_at https://corgis-edu.github.io/corgis/json/smoking/  
+gordeev_an https://corgis-edu.github.io/corgis/json/video_games/  
+goryagin_da https://corgis-edu.github.io/corgis/json/coffee/  
+ishmanov_tf https://corgis-edu.github.io/corgis/json/covid/  
+kiselev_vg https://corgis-edu.github.io/corgis/json/tate/  
+kostitsyina_ad https://corgis-edu.github.io/corgis/json/nuclear_explosions/  
+markushina_la https://corgis-edu.github.io/corgis/json/earthquakes/  
+polyakova_kp https://corgis-edu.github.io/corgis/json/classics/  
+sharifullin_af https://corgis-edu.github.io/corgis/json/cars/  
+vekovshinin_va https://corgis-edu.github.io/corgis/json/food/  
+zvyagina_mo https://corgis-edu.github.io/corgis/json/county_demographics/  
 
 ## 20231221
 ~~Нужно написать специфический (см. персональный макет) калькулятор~~
