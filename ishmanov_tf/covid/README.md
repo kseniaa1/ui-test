@@ -4,7 +4,7 @@
 
 Клонирование репозитория:
 ```bash
-git clone
+git clone https://github.com/aFy4a/ui-test.git
 cd covid
 poetry install
 ```
