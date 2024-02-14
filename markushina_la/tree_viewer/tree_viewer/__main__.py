@@ -16,7 +16,7 @@ class Application(Gtk.Application):
         self.connect('activate', self.on_activate)
 
 
-app = Application(application_id='org.matplotlib.examples.EmbeddingInGTK4')
+app = Application()
 app.connect('activate', app.on_activate)
 
 app.run(None)
