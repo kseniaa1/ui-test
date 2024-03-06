@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "covid"
+version = "0.1.0"
+description = ""
+authors = ["Gatir"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyqt6 = "^6.6.1"
+
+
+[tool.poetry.scripts]
+show_table = "covid.main:help"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
