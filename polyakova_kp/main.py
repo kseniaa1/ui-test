@@ -1,6 +1,9 @@
 import sys
-from PyQt5 import QtWidgets, uic
+from PyQt6 import QtWidgets, uic
 import math
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 
 class CalculatorApp(QtWidgets.QMainWindow):
@@ -14,8 +17,14 @@ class CalculatorApp(QtWidgets.QMainWindow):
         self.clearButton.clicked.connect(self.clear_values)
 
     def calculate_sin(self):
-        self.result = math.sin(self.result)
-        self.outputLabel.setText(str(self.result))
+        try:
+            self.result = math.sin(self.result)
+            self.outputLabel.setText(str(self.result))
+            logging.info("Sin calculated")
+        except  TypeError:
+            self.outputLabel.setText("Something is wrong. Clear results")
+            logging.error("Invalid operation")
+            self.result=0
 
     def add_value(self):
         if self.inputLineEdit.text() == "":
@@ -26,8 +35,16 @@ class CalculatorApp(QtWidgets.QMainWindow):
             new_value = float(new_value)
             self.result += new_value
             self.outputLabel.setText(str(self.result))
+            logging.info("Value added")
         except ValueError:
-            self.outputLabel.setText("Error: Invalid input")
+            self.outputLabel.setText("Something is wrong. Clear results")
+            logging.error("Invalid input")
+            self.result=0
+        except TypeError:
+            self.outputLabel.setText("Something is wrong. Clear results")
+            logging.error("Invalid operation")
+            self.result=0
+
 
     def calculate_expression(self):
         expression = self.inputLineEdit.text()
@@ -37,29 +54,39 @@ class CalculatorApp(QtWidgets.QMainWindow):
             else:
                 self.result = eval(expression)
                 self.outputLabel.setText(str(self.result))
+                logging.info("Expression calculated")
         except Exception as e:
-            self.outputLabel.setText("Error: " + str(e))
+            self.outputLabel.setText("Something is wrong. Clear results")
+            logging.error("Error in expression calculation")
+            self.result=0
 
     def clear_values(self):
         self.result = 0
         self.outputLabel.setText("")
         self.inputLineEdit.setText("")
+        logging.info("Values cleared")
 
     def closeEvent(self, e):
         result = QtWidgets.QMessageBox.question(self, "Уже уходите?(",
                                                 "Вы уверены, что хотите уйти?",
-                                                QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No,
-                                                QtWidgets.QMessageBox.No)
-        if result == QtWidgets.QMessageBox.Yes:
+                                                QtWidgets.QMessageBox.StandardButton.Yes | QtWidgets.QMessageBox.StandardButton.No,
+                                                QtWidgets.QMessageBox.StandardButton.No)
+        if result == QtWidgets.QMessageBox.StandardButton.Yes:
             e.accept()
             QtWidgets.QWidget.closeEvent(self, e)
+            logging.info("Application closed")
         else:
+            logging.info("Application was not closed")
             e.ignore()
+
 
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
     window = CalculatorApp()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
 
+
+if __name__ == "__main__":
+    main()
